@@ -1,0 +1,75 @@
+@import "style-0.scss";
+@import "menu.scss";
+@import "header.scss";
+@import "selection.scss";
+@import "recipe.scss";
+@import "recipes.scss";
+@import "hotselection.scss";
+@import "footer.scss";
+@font-face {
+	font-family: 'pfdintextcomppro';
+	src: url('../fonts/PF Din Text Comp Pro Regular.eot');
+	src: local('☺'), url('../fonts/PF Din Text Comp Pro Regular.woff') format('woff'), url('../fonts/PF Din Text Comp Pro Regular.ttf') format('truetype'), url('../fonts/PF Din Text Comp Pro Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'pfdintextcomppro';
+	src: url('../fonts/PFDinTextCompPro-Bold.eot');
+	src: local('☺'), url('../fonts/PFDinTextCompPro-Bold.woff') format('woff'), url('../fonts/PFDinTextCompPro-Bold.ttf') format('truetype'), url('../fonts/PFDinTextCompPro-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+
+
+%title{
+	font-size: 30px;
+	color: #5b5b5b;
+	font-family: "pfdintextcomppro";
+	text-align: center;
+}
+@mixin qw($f){
+	.branch {
+		margin: $f 0 0 0;
+		&__line {border-bottom: 2px solid #dadada;}
+		&__row {
+			display: flex;
+			justify-content:center;
+
+			img{
+				padding: 0 10px;
+				display: inline-block;
+				margin: -25px 0 0 0;
+				background: white;
+			}
+		}
+	}
+}
+body{
+	.basis {
+		max-width: 1366px;
+	margin: 0px auto;
+	&__row {
+		display:flex;
+	}
+	&__element{
+		
+	}
+	
+	&__content {
+		flex: 1 1 auto;
+		.b1{@include qw(26px);}
+		.b2{@include qw(150px);}
+		.b3{@include qw(55px);}
+	}
+}
+
+}
+.container {
+	max-width: 1096px;
+	margin: 0px auto;
+	
+
+}
